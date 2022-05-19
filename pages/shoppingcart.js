@@ -8,18 +8,19 @@ function shoppingcart(cartItems) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   // const router = useRouter();
   let linkname1 = '/checkout';
-  if (carts.length == 0) {
-    carts = [];
+  if (carts != undefined) {
     if (carts.length == 0) {
-      linkname1 = '/shoppingcart';
-    }
-  } else {
-    // carts = cart;
-    if (carts.length == 0) {
-      linkname1 = '/shoppingcart';
+      carts = [];
+      if (carts.length == 0) {
+        linkname1 = '/shoppingcart';
+      }
+    } else {
+      // carts = cart;
+      if (carts.length == 0) {
+        linkname1 = '/shoppingcart';
+      }
     }
   }
-
   return (
     <>
       <Box w="full" alignContent="center" h="500px">
