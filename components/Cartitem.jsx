@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import React from 'react';
 import Link from 'next/link';
-import { carts } from '../pages/constants.js';
+import { carts } from '../constants.js';
 
 import {
   NumberInput,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Text, Box } from '@chakra-ui/react';
-import { name } from './constants.js';
+import { name } from '../constants.js';
 
 const order = () => {
   let info = name;
