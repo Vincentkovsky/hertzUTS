@@ -6,7 +6,7 @@ import DefaultImage from '../public/assets/images/buggati.jpeg';
 import { Button } from '@chakra-ui/react';
 import { useState } from 'react';
 import cars from '../public/assets/cars.json';
-import { carts } from '../pages/constants.js';
+import { carts } from '../constants.js';
 
 function Car({
   car: {

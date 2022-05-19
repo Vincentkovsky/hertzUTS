@@ -1,2 +1,0 @@
-const carts = [];
-const name = '';
