@@ -24,7 +24,7 @@ import {
 
 // import noresult from '../assets/images/noresult.svg'
 
-const checkout = () => {
+const Checkout = () => {
   const router = useRouter();
   const {
     handleSubmit,
@@ -111,4 +111,4 @@ const checkout = () => {
   );
 };
 
-export default checkout;
+export default Checkout;
