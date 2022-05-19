@@ -6,13 +6,6 @@ import Cartitem from '../components/Cartitem';
 function shoppingcart(cartItems) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   // const router = useRouter();
-  var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', "window.localStorage.getItem('cart')");
-  ourRequest.onload = function () {
-    var data = ourRequest.responseText;
-    console.log(data);
-  };
-  ourRequest.send();
 
   let cart = [];
   let linkname1 = '/checkout';

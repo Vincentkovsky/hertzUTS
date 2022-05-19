@@ -34,7 +34,9 @@ const Checkout = () => {
 
   function onSubmit(values) {
     return new Promise((resolve) => {
-      localStorage.setItem('info', JSON.stringify(values));
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('info', JSON.stringify(values));
+      }
       setTimeout(() => {
         router.push('/order');
         resolve();
