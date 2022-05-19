@@ -1,10 +1,9 @@
 import React from 'react';
 import { Flex, Text, Box } from '@chakra-ui/react';
+import { name } from './constants.js';
 
 const order = () => {
-  if (typeof window !== 'undefined') {
-    let info = JSON.parse(localStorage.getItem('info'));
-  }
+  let info = name;
   return (
     <Box h="600px">
       <Box h="30px"></Box>

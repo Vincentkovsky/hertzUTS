@@ -6,6 +6,7 @@ import DefaultImage from '../public/assets/images/buggati.jpeg';
 import { Button } from '@chakra-ui/react';
 import { useState } from 'react';
 import cars from '../public/assets/cars.json';
+import { carts } from '../pages/constants.js';
 
 function Car({
   car: {
@@ -21,6 +22,8 @@ function Car({
     Description,
   },
 }) {
+  // let cart = carts;
+  // console.log(cart);
   const addToCart = ({
     Category,
     Availability,
@@ -34,12 +37,12 @@ function Car({
     Description,
   }) => {
     if (Availability == true) {
-      if (!localStorage.getItem('cart')) {
-        localStorage.setItem('cart', '[]');
+      if (carts == undefined) {
+        carts = [];
       }
-      let cart = JSON.parse(localStorage.getItem('cart'));
-      if (cart.length == 0) {
-        cart.push({
+      // let cart = JSON.parse(localStorage.getItem('cart'));
+      if (carts.length == 0) {
+        carts.push({
           Category,
           Availability,
           Brand,
@@ -52,9 +55,9 @@ function Car({
           Description,
         });
       } else {
-        let res = cart.find((element) => element.Model == Model);
+        let res = carts.find((element) => element.Model == Model);
         if (res === undefined) {
-          cart.push({
+          carts.push({
             Category,
             Availability,
             Brand,
@@ -68,7 +71,7 @@ function Car({
           });
         }
       }
-      localStorage.setItem('cart', JSON.stringify(cart));
+      // carts = cart;
       alert('Add to the cart successfully!');
     } else {
       alert('Sorry, the car is not available now. Please come back later.');

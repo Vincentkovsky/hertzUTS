@@ -21,6 +21,7 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from '@chakra-ui/react';
+import { name, carts } from './constants.js';
 
 // import noresult from '../assets/images/noresult.svg'
 
@@ -34,9 +35,8 @@ const Checkout = () => {
 
   function onSubmit(values) {
     return new Promise((resolve) => {
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('info', JSON.stringify(values));
-      }
+      carts = [];
+      name = values;
       setTimeout(() => {
         router.push('/order');
         resolve();

@@ -1,22 +1,21 @@
 import { Flex, Box, Text, Icon, Button, Spacer, Alert } from '@chakra-ui/react';
 import Link from 'next/link';
 import Cartitem from '../components/Cartitem';
+import { carts } from './constants.js';
 // import noresult from '../assets/images/noresult.svg'
 
 function shoppingcart(cartItems) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   // const router = useRouter();
-
-  let cart = [];
   let linkname1 = '/checkout';
-  if (!localStorage.getItem('cart')) {
-    cart = [];
-    if (cart.length == 0) {
+  if (carts.length == 0) {
+    carts = [];
+    if (carts.length == 0) {
       linkname1 = '/shoppingcart';
     }
   } else {
-    cart = JSON.parse(localStorage.getItem('cart'));
-    if (cart.length == 0) {
+    // carts = cart;
+    if (carts.length == 0) {
       linkname1 = '/shoppingcart';
     }
   }
@@ -24,7 +23,7 @@ function shoppingcart(cartItems) {
   return (
     <>
       <Box w="full" alignContent="center" h="500px">
-        {cart.map((car) => (
+        {carts.map((car) => (
           <Cartitem car={car} key={car.Model} />
         ))}
       </Box>
@@ -36,7 +35,7 @@ function shoppingcart(cartItems) {
               bg="#1b1b1b"
               color="#f90"
               onClick={() => {
-                if (cart.length == 0) {
+                if (carts.length == 0) {
                   alert('No car has been researved!');
                 }
               }}

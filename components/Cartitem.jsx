@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import React from 'react';
 import Link from 'next/link';
+import { carts } from '../pages/constants.js';
 
 import {
   NumberInput,
@@ -35,9 +36,9 @@ function Cartitem({
   },
 }) {
   const deleteCart = ({ Model }) => {
-    let cart = JSON.parse(localStorage.getItem('cart'));
+    let cart = carts;
     cart = cart.filter((element) => element.Model != Model);
-    localStorage.setItem('cart', JSON.stringify(cart));
+    carts = cart;
   };
   const [days, setValue] = React.useState('');
   const handleChange = (event) => setValue(event.target.value);
