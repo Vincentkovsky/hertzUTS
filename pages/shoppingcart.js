@@ -1,7 +1,7 @@
 import { Flex, Box, Text, Icon, Button, Spacer, Alert } from '@chakra-ui/react';
 import Link from 'next/link';
 import Cartitem from '../components/Cartitem';
-import { carts } from './constants.js';
+import { carts } from '../constants.js';
 // import noresult from '../assets/images/noresult.svg'
 
 function shoppingcart(cartItems) {

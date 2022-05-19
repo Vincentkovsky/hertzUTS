@@ -21,7 +21,7 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from '@chakra-ui/react';
-import { name, carts } from './constants.js';
+import { name, carts } from '../constants.js';
 
 // import noresult from '../assets/images/noresult.svg'
 
