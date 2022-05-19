@@ -20,6 +20,19 @@ function shoppingcart(cartItems) {
         linkname1 = '/shoppingcart';
       }
     }
+  } else {
+    carts = {
+      Category: 'Sedan',
+      Availability: true,
+      Brand: 'Toyota',
+      Model: 'Camry',
+      Modelyear: 2013,
+      Mileage: 10000,
+      Fueltype: 'Petrol',
+      Seats: 5,
+      Priceperday: '$120',
+      Description: 'xxxxxxx',
+    };
   }
   return (
     <>
