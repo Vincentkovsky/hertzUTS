@@ -1,0 +1,123 @@
+[
+  {
+    "Category": "Sedan",
+    "Availability": true,
+    "Brand": "Toyota",
+    "Model": "Camry",
+    "Modelyear": 2013,
+    "Mileage": 10000,
+    "Fueltype": "Petrol",
+    "Seats": 5,
+    "Priceperday": "$120",
+    "Description": "xxxxxxx"
+    },
+  {
+      "Category": "Sedan",
+      "Availability": true,
+      "Brand": "BMW",
+      "Model": "320i",
+      "Modelyear": 2015,
+      "Mileage": 6000,
+      "Fueltype": "petrol",
+      "Seats": 5,
+      "Priceperday": "$180",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "SUV",
+      "Availability": true,
+      "Brand": "Holden",
+      "Model": "Captiva",
+      "Modelyear": 2016,
+      "Mileage": 5000,
+      "Fueltype": "Diesel",
+      "Seats": 5,
+      "Priceperday": "$150",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "SUV",
+      "Availability": true,
+      "Brand": "Jeep",
+      "Model": "Cherokee",
+      "Modelyear": 2016,
+      "Mileage": 5000,
+      "Fueltype": "Petrol",
+      "Seats": 7,
+      "Priceperday": "$250",
+      "Description": "xxxxxxx"
+
+  },
+  {
+      "Category": "Sedan",
+      "Availability": true,
+      "Brand": "Honda",
+      "Model": "Civic",
+      "Modelyear": 2016,
+      "Mileage": 5000,
+      "Fueltype": "Petrol",
+      "Seats": 5,
+      "Priceperday": "$120",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "SUV",
+      "Availability": true,
+      "Brand": "Mercedes-Benz",
+      "Model": "GLC",
+      "Modelyear": 2018,
+      "Mileage": 3000,
+      "Fueltype": "Petrol",
+      "Seats": 5,
+      "Priceperday": "$260",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "Wagon",
+      "Availability": true,
+      "Brand": "Volkswagan",
+      "Model": "Golf",
+      "Modelyear": 2013,
+      "Mileage": 15000,
+      "Fueltype": "Petrol",
+      "Seats": 5,
+      "Priceperday": "$110",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "SUV",
+      "Availability": false,
+      "Brand": "Suzuki",
+      "Model": "Jimny",
+      "Modelyear": 2014,
+      "Mileage": 12000,
+      "Fueltype": "Diesel",
+      "Seats": 5,
+      "Priceperday": "$130",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "Sedan",
+      "Availability": false,
+      "Brand": "Hyundai",
+      "Model": "Sonata",
+      "Modelyear": 2014,
+      "Mileage": 16000,
+      "Fueltype": "Petrol",
+      "Seats": 5,
+      "Priceperday": "$140",
+      "Description": "xxxxxxx"
+  },
+  {
+      "Category": "SUV",
+      "Availability": false,
+      "Brand": "Nissan",
+      "Model": "X-trail",
+      "Modelyear": 2017,
+      "Mileage": 2000,
+      "Fueltype": "Diesel",
+      "Seats": 5,
+      "Priceperday": "$170",
+      "Description": "xxxxxxx"
+  }
+]
