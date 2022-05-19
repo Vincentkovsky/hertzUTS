@@ -107,6 +107,7 @@ function Car({
     >
       <Box>
         <Image
+          alt={'Car'}
           src={
             `/assets/img/${Model}.jpg`
               ? `/assets/img/${Model}.jpg`
