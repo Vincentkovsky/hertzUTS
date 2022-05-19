@@ -3,8 +3,9 @@ import { Flex, Text, Box } from '@chakra-ui/react';
 import { name } from '../constants.js';
 
 const order = () => {
+  let info = '';
   if (name != undefined) {
-    let info = name;
+    info = name;
   } else {
     name = { firstName: '', lastName: '' };
   }
